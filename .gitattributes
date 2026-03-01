@@ -1,0 +1,2 @@
+vosk-model-*.zip filter=lfs diff=lfs merge=lfs -text
+models/vosk/*.zip filter=lfs diff=lfs merge=lfs -text
