@@ -1,0 +1,10 @@
+This repository includes three Vosk offline ASR models (ZIP) for quick start:
+- vosk-model-small-ru-0.22.zip
+- vosk-model-small-en-us-0.15.zip
+- vosk-model-ar-mgb2-0.4.zip
+
+Important:
+- The Arabic ZIP is larger than 100 MB, so Git LFS is required.
+- If you prefer not to store models in Git, remove the ZIP files and use the scripts in /scripts to download them.
+
+Official model list: https://alphacephei.com/vosk/models

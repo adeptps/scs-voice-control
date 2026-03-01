@@ -1,0 +1,4 @@
+<resources>
+    <string name="voice_ui_listening">Listening</string>
+    <string name="voice_ui_idle">Idle</string>
+</resources>

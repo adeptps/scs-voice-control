@@ -1,0 +1,783 @@
+{
+  "schema": 1,
+  "pack_id": "en-car-v0.1",
+  "lang": "en",
+  "locale": "en-US",
+  "version": "0.1.0",
+  "generated_at": "2026-03-01T11:13:43Z",
+  "note": "Stub pack. Fill phrases with English fixed commands. Keep action IDs unchanged.",
+  "commands": [
+    {
+      "id": "car.climate.on",
+      "phrases": []
+    },
+    {
+      "id": "car.climate.off",
+      "phrases": []
+    },
+    {
+      "id": "car.climate.ac_on",
+      "phrases": []
+    },
+    {
+      "id": "car.climate.ac_off",
+      "phrases": []
+    },
+    {
+      "id": "car.climate.eco_ac_on",
+      "phrases": []
+    },
+    {
+      "id": "car.climate.eco_ac_off",
+      "phrases": []
+    },
+    {
+      "id": "car.climate.auto_on",
+      "phrases": []
+    },
+    {
+      "id": "car.climate.restore_prev",
+      "phrases": []
+    },
+    {
+      "id": "car.climate.set_temp.16",
+      "phrases": []
+    },
+    {
+      "id": "car.climate.set_temp.17",
+      "phrases": []
+    },
+    {
+      "id": "car.climate.set_temp.18",
+      "phrases": []
+    },
+    {
+      "id": "car.climate.set_temp.19",
+      "phrases": []
+    },
+    {
+      "id": "car.climate.set_temp.20",
+      "phrases": []
+    },
+    {
+      "id": "car.climate.set_temp.21",
+      "phrases": []
+    },
+    {
+      "id": "car.climate.set_temp.22",
+      "phrases": []
+    },
+    {
+      "id": "car.climate.set_temp.23",
+      "phrases": []
+    },
+    {
+      "id": "car.climate.set_temp.24",
+      "phrases": []
+    },
+    {
+      "id": "car.climate.set_temp.25",
+      "phrases": []
+    },
+    {
+      "id": "car.climate.set_temp.26",
+      "phrases": []
+    },
+    {
+      "id": "car.climate.set_temp.27",
+      "phrases": []
+    },
+    {
+      "id": "car.climate.set_temp.28",
+      "phrases": []
+    },
+    {
+      "id": "car.climate.set_temp.29",
+      "phrases": []
+    },
+    {
+      "id": "car.climate.set_temp.30",
+      "phrases": []
+    },
+    {
+      "id": "car.climate.temp_up",
+      "phrases": []
+    },
+    {
+      "id": "car.climate.temp_down",
+      "phrases": []
+    },
+    {
+      "id": "car.climate.set_fan.1",
+      "phrases": []
+    },
+    {
+      "id": "car.climate.set_fan.2",
+      "phrases": []
+    },
+    {
+      "id": "car.climate.set_fan.3",
+      "phrases": []
+    },
+    {
+      "id": "car.climate.set_fan.4",
+      "phrases": []
+    },
+    {
+      "id": "car.climate.set_fan.5",
+      "phrases": []
+    },
+    {
+      "id": "car.climate.set_fan.6",
+      "phrases": []
+    },
+    {
+      "id": "car.climate.set_fan.7",
+      "phrases": []
+    },
+    {
+      "id": "car.climate.set_fan.8",
+      "phrases": []
+    },
+    {
+      "id": "car.climate.set_fan.9",
+      "phrases": []
+    },
+    {
+      "id": "car.climate.fan_up",
+      "phrases": []
+    },
+    {
+      "id": "car.climate.fan_down",
+      "phrases": []
+    },
+    {
+      "id": "car.climate.fan_max",
+      "phrases": []
+    },
+    {
+      "id": "car.climate.air_face",
+      "phrases": []
+    },
+    {
+      "id": "car.climate.air_feet",
+      "phrases": []
+    },
+    {
+      "id": "car.climate.air_windshield",
+      "phrases": []
+    },
+    {
+      "id": "car.climate.air_face_feet",
+      "phrases": []
+    },
+    {
+      "id": "car.climate.air_feet_windshield",
+      "phrases": []
+    },
+    {
+      "id": "car.climate.air_face_windshield",
+      "phrases": []
+    },
+    {
+      "id": "car.climate.defrost_front_on",
+      "phrases": []
+    },
+    {
+      "id": "car.climate.defrost_front_off",
+      "phrases": []
+    },
+    {
+      "id": "car.climate.defrost_rear_on",
+      "phrases": []
+    },
+    {
+      "id": "car.climate.defrost_rear_off",
+      "phrases": []
+    },
+    {
+      "id": "car.climate.recirc_on",
+      "phrases": []
+    },
+    {
+      "id": "car.climate.recirc_off",
+      "phrases": []
+    },
+    {
+      "id": "car.climate.ventilate",
+      "phrases": []
+    },
+    {
+      "id": "car.seat_heat.driver.0",
+      "phrases": []
+    },
+    {
+      "id": "car.seat_heat.driver.1",
+      "phrases": []
+    },
+    {
+      "id": "car.seat_heat.driver.2",
+      "phrases": []
+    },
+    {
+      "id": "car.seat_heat.driver.3",
+      "phrases": []
+    },
+    {
+      "id": "car.seat_heat.passenger.0",
+      "phrases": []
+    },
+    {
+      "id": "car.seat_heat.passenger.1",
+      "phrases": []
+    },
+    {
+      "id": "car.seat_heat.passenger.2",
+      "phrases": []
+    },
+    {
+      "id": "car.seat_heat.passenger.3",
+      "phrases": []
+    },
+    {
+      "id": "car.seat_heat.rear.0",
+      "phrases": []
+    },
+    {
+      "id": "car.seat_heat.rear.1",
+      "phrases": []
+    },
+    {
+      "id": "car.seat_heat.rear.2",
+      "phrases": []
+    },
+    {
+      "id": "car.seat_heat.rear.3",
+      "phrases": []
+    },
+    {
+      "id": "car.seat_heat.front.0",
+      "phrases": []
+    },
+    {
+      "id": "car.seat_heat.front.1",
+      "phrases": []
+    },
+    {
+      "id": "car.seat_heat.front.2",
+      "phrases": []
+    },
+    {
+      "id": "car.seat_heat.front.3",
+      "phrases": []
+    },
+    {
+      "id": "car.seat_vent.driver.0",
+      "phrases": []
+    },
+    {
+      "id": "car.seat_vent.driver.1",
+      "phrases": []
+    },
+    {
+      "id": "car.seat_vent.driver.2",
+      "phrases": []
+    },
+    {
+      "id": "car.seat_vent.driver.3",
+      "phrases": []
+    },
+    {
+      "id": "car.seat_vent.passenger.0",
+      "phrases": []
+    },
+    {
+      "id": "car.seat_vent.passenger.1",
+      "phrases": []
+    },
+    {
+      "id": "car.seat_vent.passenger.2",
+      "phrases": []
+    },
+    {
+      "id": "car.seat_vent.passenger.3",
+      "phrases": []
+    },
+    {
+      "id": "car.steering_heat.0",
+      "phrases": []
+    },
+    {
+      "id": "car.steering_heat.1",
+      "phrases": []
+    },
+    {
+      "id": "car.steering_heat.2",
+      "phrases": []
+    },
+    {
+      "id": "car.steering_heat.3",
+      "phrases": []
+    },
+    {
+      "id": "car.all_heat_off",
+      "phrases": []
+    },
+    {
+      "id": "car.window.driver.0",
+      "phrases": []
+    },
+    {
+      "id": "car.window.driver.10",
+      "phrases": []
+    },
+    {
+      "id": "car.window.driver.20",
+      "phrases": []
+    },
+    {
+      "id": "car.window.driver.30",
+      "phrases": []
+    },
+    {
+      "id": "car.window.driver.40",
+      "phrases": []
+    },
+    {
+      "id": "car.window.driver.50",
+      "phrases": []
+    },
+    {
+      "id": "car.window.driver.60",
+      "phrases": []
+    },
+    {
+      "id": "car.window.driver.70",
+      "phrases": []
+    },
+    {
+      "id": "car.window.driver.80",
+      "phrases": []
+    },
+    {
+      "id": "car.window.driver.90",
+      "phrases": []
+    },
+    {
+      "id": "car.window.driver.100",
+      "phrases": []
+    },
+    {
+      "id": "car.window.passenger.0",
+      "phrases": []
+    },
+    {
+      "id": "car.window.passenger.10",
+      "phrases": []
+    },
+    {
+      "id": "car.window.passenger.20",
+      "phrases": []
+    },
+    {
+      "id": "car.window.passenger.30",
+      "phrases": []
+    },
+    {
+      "id": "car.window.passenger.40",
+      "phrases": []
+    },
+    {
+      "id": "car.window.passenger.50",
+      "phrases": []
+    },
+    {
+      "id": "car.window.passenger.60",
+      "phrases": []
+    },
+    {
+      "id": "car.window.passenger.70",
+      "phrases": []
+    },
+    {
+      "id": "car.window.passenger.80",
+      "phrases": []
+    },
+    {
+      "id": "car.window.passenger.90",
+      "phrases": []
+    },
+    {
+      "id": "car.window.passenger.100",
+      "phrases": []
+    },
+    {
+      "id": "car.window.rear_left.0",
+      "phrases": []
+    },
+    {
+      "id": "car.window.rear_left.10",
+      "phrases": []
+    },
+    {
+      "id": "car.window.rear_left.20",
+      "phrases": []
+    },
+    {
+      "id": "car.window.rear_left.30",
+      "phrases": []
+    },
+    {
+      "id": "car.window.rear_left.40",
+      "phrases": []
+    },
+    {
+      "id": "car.window.rear_left.50",
+      "phrases": []
+    },
+    {
+      "id": "car.window.rear_left.60",
+      "phrases": []
+    },
+    {
+      "id": "car.window.rear_left.70",
+      "phrases": []
+    },
+    {
+      "id": "car.window.rear_left.80",
+      "phrases": []
+    },
+    {
+      "id": "car.window.rear_left.90",
+      "phrases": []
+    },
+    {
+      "id": "car.window.rear_left.100",
+      "phrases": []
+    },
+    {
+      "id": "car.window.rear_right.0",
+      "phrases": []
+    },
+    {
+      "id": "car.window.rear_right.10",
+      "phrases": []
+    },
+    {
+      "id": "car.window.rear_right.20",
+      "phrases": []
+    },
+    {
+      "id": "car.window.rear_right.30",
+      "phrases": []
+    },
+    {
+      "id": "car.window.rear_right.40",
+      "phrases": []
+    },
+    {
+      "id": "car.window.rear_right.50",
+      "phrases": []
+    },
+    {
+      "id": "car.window.rear_right.60",
+      "phrases": []
+    },
+    {
+      "id": "car.window.rear_right.70",
+      "phrases": []
+    },
+    {
+      "id": "car.window.rear_right.80",
+      "phrases": []
+    },
+    {
+      "id": "car.window.rear_right.90",
+      "phrases": []
+    },
+    {
+      "id": "car.window.rear_right.100",
+      "phrases": []
+    },
+    {
+      "id": "car.window.all_close",
+      "phrases": []
+    },
+    {
+      "id": "car.window.all_open_half",
+      "phrases": []
+    },
+    {
+      "id": "car.roof.0",
+      "phrases": []
+    },
+    {
+      "id": "car.roof.10",
+      "phrases": []
+    },
+    {
+      "id": "car.roof.20",
+      "phrases": []
+    },
+    {
+      "id": "car.roof.30",
+      "phrases": []
+    },
+    {
+      "id": "car.roof.40",
+      "phrases": []
+    },
+    {
+      "id": "car.roof.50",
+      "phrases": []
+    },
+    {
+      "id": "car.roof.60",
+      "phrases": []
+    },
+    {
+      "id": "car.roof.70",
+      "phrases": []
+    },
+    {
+      "id": "car.roof.80",
+      "phrases": []
+    },
+    {
+      "id": "car.roof.90",
+      "phrases": []
+    },
+    {
+      "id": "car.roof.100",
+      "phrases": []
+    },
+    {
+      "id": "car.shade.0",
+      "phrases": []
+    },
+    {
+      "id": "car.shade.10",
+      "phrases": []
+    },
+    {
+      "id": "car.shade.20",
+      "phrases": []
+    },
+    {
+      "id": "car.shade.30",
+      "phrases": []
+    },
+    {
+      "id": "car.shade.40",
+      "phrases": []
+    },
+    {
+      "id": "car.shade.50",
+      "phrases": []
+    },
+    {
+      "id": "car.shade.60",
+      "phrases": []
+    },
+    {
+      "id": "car.shade.70",
+      "phrases": []
+    },
+    {
+      "id": "car.shade.80",
+      "phrases": []
+    },
+    {
+      "id": "car.shade.90",
+      "phrases": []
+    },
+    {
+      "id": "car.shade.100",
+      "phrases": []
+    },
+    {
+      "id": "car.close_all",
+      "phrases": []
+    },
+    {
+      "id": "car.trunk.open",
+      "phrases": []
+    },
+    {
+      "id": "car.trunk.close",
+      "phrases": []
+    },
+    {
+      "id": "car.wipers.service_on",
+      "phrases": []
+    },
+    {
+      "id": "car.wipers.service_off",
+      "phrases": []
+    },
+    {
+      "id": "car.lights.auto_on",
+      "phrases": []
+    },
+    {
+      "id": "car.lights.auto_off",
+      "phrases": []
+    },
+    {
+      "id": "car.lights.low_beam_on",
+      "phrases": []
+    },
+    {
+      "id": "car.lights.low_beam_off",
+      "phrases": []
+    },
+    {
+      "id": "car.lights.position_on",
+      "phrases": []
+    },
+    {
+      "id": "car.lights.position_off",
+      "phrases": []
+    },
+    {
+      "id": "car.lights.fog_rear_on",
+      "phrases": []
+    },
+    {
+      "id": "car.lights.fog_rear_off",
+      "phrases": []
+    },
+    {
+      "id": "car.lights.all_on",
+      "phrases": []
+    },
+    {
+      "id": "car.lights.all_off",
+      "phrases": []
+    },
+    {
+      "id": "car.drive_mode.sport.on",
+      "phrases": []
+    },
+    {
+      "id": "car.drive_mode.offroad.on",
+      "phrases": []
+    },
+    {
+      "id": "car.drive_mode.eco.on",
+      "phrases": []
+    },
+    {
+      "id": "car.drive_mode.comfort.on",
+      "phrases": []
+    },
+    {
+      "id": "car.drive_mode.smart.on",
+      "phrases": []
+    },
+    {
+      "id": "car.drive_mode.snow.on",
+      "phrases": []
+    },
+    {
+      "id": "car.drive_mode.sand.on",
+      "phrases": []
+    },
+    {
+      "id": "car.drive_mode.mud.on",
+      "phrases": []
+    },
+    {
+      "id": "car.drive_mode.rocks.on",
+      "phrases": []
+    },
+    {
+      "id": "car.drive_mode.power.on",
+      "phrases": []
+    },
+    {
+      "id": "car.drive_mode.restore_prev",
+      "phrases": []
+    },
+    {
+      "id": "car.status.fuel",
+      "phrases": []
+    },
+    {
+      "id": "car.status.range",
+      "phrases": []
+    },
+    {
+      "id": "car.status.temp_outside",
+      "phrases": []
+    },
+    {
+      "id": "car.status.temp_cabin",
+      "phrases": []
+    },
+    {
+      "id": "hud.projection.toggle",
+      "phrases": []
+    },
+    {
+      "id": "media.play_pause",
+      "phrases": []
+    },
+    {
+      "id": "car.drive_mode.sport_plus.on",
+      "phrases": []
+    },
+    {
+      "id": "car.drive_mode.power.on",
+      "phrases": []
+    },
+    {
+      "id": "car.drive_mode.intelligent.on",
+      "phrases": []
+    },
+    {
+      "id": "car.engine.start_stop.toggle",
+      "phrases": []
+    },
+    {
+      "id": "car.prepare.winter",
+      "phrases": []
+    },
+    {
+      "id": "car.prepare.summer",
+      "phrases": []
+    },
+    {
+      "id": "car.prepare.default",
+      "phrases": []
+    },
+    {
+      "id": "car.climate.air_soft",
+      "phrases": []
+    },
+    {
+      "id": "car.climate.air_strong",
+      "phrases": []
+    },
+    {
+      "id": "car.lights.cabin_driver.toggle",
+      "phrases": []
+    },
+    {
+      "id": "car.lights.cabin_passenger.toggle",
+      "phrases": []
+    },
+    {
+      "id": "car.lights.flashlight.toggle",
+      "phrases": []
+    },
+    {
+      "id": "car.climate.hot",
+      "phrases": []
+    },
+    {
+      "id": "car.climate.cold",
+      "phrases": []
+    }
+  ]
+}
