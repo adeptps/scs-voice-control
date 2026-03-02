@@ -24,13 +24,20 @@ class ModelPackManager(
         return parseCatalog(text)
     }
 
-    fun installPack(pack: ModelPack): File {
+    fun installPack(
+        pack: ModelPack,
+        onDownloadProgress: ((downloadedBytes: Long, totalBytes: Long) -> Unit)? = null,
+    ): File {
         if (pack.engine.lowercase() != "vosk") {
             throw ModelPackException("Unsupported engine: ${pack.engine}")
         }
 
         val zipFile = File(context.cacheDir, "${pack.id}.zip")
-        HttpUtil.downloadToFile(pack.url, zipFile)
+        HttpUtil.downloadToFile(
+            url = pack.url,
+            outFile = zipFile,
+            onProgress = onDownloadProgress,
+        )
 
         val hash = HashUtil.sha256Hex(zipFile)
         if (!hash.equals(pack.sha256, ignoreCase = true)) {

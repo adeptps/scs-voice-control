@@ -59,7 +59,8 @@ class VoskSttEngine(
                 })
 
             } catch (t: Throwable) {
-                listener.onError("Vosk start failed", t)
+                val details = t.message?.takeIf { it.isNotBlank() } ?: "Unknown error"
+                listener.onError("Vosk start failed: $details", t)
             }
         }
     }

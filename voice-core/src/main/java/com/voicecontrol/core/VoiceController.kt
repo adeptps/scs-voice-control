@@ -40,10 +40,10 @@ class VoiceController(
     }
 
     fun start() {
-        if (listeningJob != null) return
+        if (activeEngine != null || listeningJob?.isActive == true) return
         emit(VoiceEvent.ListeningStarted)
 
-        listeningJob = scope.launch {
+        val job = scope.launch {
             try {
                 val engine = selectEngine()
                 activeEngine = engine
@@ -57,9 +57,24 @@ class VoiceController(
                         emit(VoiceEvent.FinalText(text))
                         val localeTag = config.locale.toLanguageTag()
                         val normalized = TextNorm.normalize(localeTag, text)
-                        val cmd = interpreter.interpret(localeTag, normalized)
-                        if (cmd != null) {
-                            emit(VoiceEvent.CommandRecognized(cmd.copy(rawText = text)))
+                        val interpreted = interpreter.interpret(localeTag, normalized)
+                        if (interpreted == null) {
+                            emit(VoiceEvent.NoCommandMatch(text = text))
+                            return
+                        }
+
+                        val command = interpreted.copy(rawText = text)
+                        if (command.confidence >= config.minCommandConfidence) {
+                            emit(VoiceEvent.CommandRecognized(command))
+                        } else {
+                            emit(
+                                VoiceEvent.NoCommandMatch(
+                                    text = text,
+                                    bestActionId = command.actionId,
+                                    confidence = command.confidence,
+                                    matchedPhrase = command.matchedPhrase,
+                                )
+                            )
                         }
                     }
 
@@ -69,9 +84,14 @@ class VoiceController(
                 }, config)
 
             } catch (t: Throwable) {
-                emit(VoiceEvent.Error("Failed to start voice recognition", t))
+                val msg = t.message?.takeIf { it.isNotBlank() } ?: "Failed to start voice recognition"
+                emit(VoiceEvent.Error(msg, t))
                 stop()
             }
+        }
+        listeningJob = job
+        job.invokeOnCompletion {
+            if (listeningJob == job) listeningJob = null
         }
     }
 
@@ -89,12 +109,25 @@ class VoiceController(
     }
 
     private fun selectEngine(): SttEngine {
+        val onlineAvailable = OnlineSpeechRecognizerEngine.isAvailable(appContext)
+        val offlineAvailable = modelProvider.hasInstalledModel(config.locale)
         return when (config.mode) {
             EngineMode.OFFLINE_ONLY -> VoskSttEngine(appContext, modelProvider)
-            EngineMode.ONLINE_ONLY -> OnlineSpeechRecognizerEngine(appContext)
+            EngineMode.ONLINE_ONLY -> {
+                if (!onlineAvailable) {
+                    throw IllegalStateException(
+                        "Online recognition is unavailable on this device. " +
+                            "Use OFFLINE_ONLY or AUTO with an installed Vosk model."
+                    )
+                }
+                OnlineSpeechRecognizerEngine(appContext)
+            }
             EngineMode.AUTO -> {
                 val onlineAllowed = config.manualOnlineEnabled && config.allowAutoOnlineSwitch
-                if (onlineAllowed && NetworkUtil.hasInternet(appContext)) {
+                // For fixed commands, offline Vosk + grammar is usually more robust in noisy environments.
+                if (offlineAvailable) {
+                    VoskSttEngine(appContext, modelProvider)
+                } else if (onlineAllowed && NetworkUtil.hasInternet(appContext) && onlineAvailable) {
                     OnlineSpeechRecognizerEngine(appContext)
                 } else {
                     VoskSttEngine(appContext, modelProvider)

@@ -1,3 +1,35 @@
 <resources>
     <string name="app_name">Voice Sample</string>
+    <string name="title_voice_control_sample">Voice Control Sample</string>
+    <string name="btn_tap_to_speak_long_press_to_stop">Tap to speak, long-press to stop</string>
+    <string name="status_idle">Idle</string>
+    <string name="status_listening">Listening</string>
+    <string name="hint_language">Language</string>
+    <string name="hint_recognition_mode">Recognition mode</string>
+    <string name="chk_manual_online_enabled">Manual online enabled</string>
+    <string name="chk_auto_switch_online">Auto switch to online when internet is available</string>
+    <string name="hint_install_arabic_model">Tip: Install an Arabic Vosk model for OFFLINE mode. AUTO can fall back to online if available.</string>
+    <string name="status_mic_permission_granted">Microphone permission granted</string>
+    <string name="status_mic_permission_denied">Microphone permission denied</string>
+    <string name="status_command_template">Command: %1$s</string>
+    <string name="status_command_confidence_template">Command: %1$s (%2$d%%)</string>
+    <string name="status_low_confidence_template">Low confidence (%1$d%%): %2$s</string>
+    <string name="status_no_command_match">No matching command recognized</string>
+    <string name="status_error_template">Error: %1$s</string>
+    <string name="option_locale_ar">Arabic (ar)</string>
+    <string name="option_locale_ru">Russian (ru-RU)</string>
+    <string name="option_locale_en">English (en-US)</string>
+    <string name="option_mode_auto">Automatic (AUTO)</string>
+    <string name="option_mode_offline">Offline (OFFLINE_ONLY)</string>
+    <string name="option_mode_online">Online (ONLINE_ONLY)</string>
+    <string name="status_installing_ar_model">Installing Arabic model...</string>
+    <string name="status_fetching_model_index">Fetching model catalog...</string>
+    <string name="status_downloading_ar_model_percent">Downloading Arabic model: %1$d%%</string>
+    <string name="status_downloading_ar_model_mb">Downloading Arabic model: %1$dMB</string>
+    <string name="status_ar_model_installed">Arabic model installed successfully</string>
+    <string name="status_ar_model_install_failed">Failed to download Arabic model: %1$s</string>
+    <string name="status_model_index_not_configured">Model index URL is not configured</string>
+    <string name="status_ar_pack_not_found_in_index">Arabic Vosk pack was not found in model index</string>
+    <string name="status_check_internet">Check internet connection</string>
+    <string name="model_index_url" translatable="false"></string>
 </resources>

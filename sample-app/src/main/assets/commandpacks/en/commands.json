@@ -1,783 +1,1555 @@
 {
   "schema": 1,
-  "pack_id": "en-car-v0.1",
+  "pack_id": "en-car-v0.2",
   "lang": "en",
   "locale": "en-US",
-  "version": "0.1.0",
-  "generated_at": "2026-03-01T11:13:43Z",
-  "note": "Stub pack. Fill phrases with English fixed commands. Keep action IDs unchanged.",
+  "version": "0.2.0",
+  "generated_at": "2026-03-01T23:03:44Z",
+  "note": "English command pack with fixed phrases for all action IDs.",
   "commands": [
     {
       "id": "car.climate.on",
-      "phrases": []
+      "phrases": [
+        "turn on climate control",
+        "enable climate control",
+        "start climate"
+      ]
     },
     {
       "id": "car.climate.off",
-      "phrases": []
+      "phrases": [
+        "turn off climate control",
+        "disable climate control",
+        "stop climate"
+      ]
     },
     {
       "id": "car.climate.ac_on",
-      "phrases": []
+      "phrases": [
+        "turn on air conditioning",
+        "ac on",
+        "enable ac cooling"
+      ]
     },
     {
       "id": "car.climate.ac_off",
-      "phrases": []
+      "phrases": [
+        "turn off air conditioning",
+        "ac off",
+        "disable ac cooling"
+      ]
     },
     {
       "id": "car.climate.eco_ac_on",
-      "phrases": []
+      "phrases": [
+        "turn on eco ac",
+        "enable eco air conditioning",
+        "eco cooling on"
+      ]
     },
     {
       "id": "car.climate.eco_ac_off",
-      "phrases": []
+      "phrases": [
+        "turn off eco ac",
+        "disable eco air conditioning",
+        "eco cooling off"
+      ]
     },
     {
       "id": "car.climate.auto_on",
-      "phrases": []
+      "phrases": [
+        "enable auto climate mode",
+        "climate auto mode on",
+        "automatic climate on"
+      ]
     },
     {
       "id": "car.climate.restore_prev",
-      "phrases": []
+      "phrases": [
+        "restore previous climate settings",
+        "return climate to previous state",
+        "revert climate settings"
+      ]
     },
     {
       "id": "car.climate.set_temp.16",
-      "phrases": []
+      "phrases": [
+        "set temperature to 16 degrees",
+        "temperature 16 degrees",
+        "set climate to 16"
+      ]
     },
     {
       "id": "car.climate.set_temp.17",
-      "phrases": []
+      "phrases": [
+        "set temperature to 17 degrees",
+        "temperature 17 degrees",
+        "set climate to 17"
+      ]
     },
     {
       "id": "car.climate.set_temp.18",
-      "phrases": []
+      "phrases": [
+        "set temperature to 18 degrees",
+        "temperature 18 degrees",
+        "set climate to 18"
+      ]
     },
     {
       "id": "car.climate.set_temp.19",
-      "phrases": []
+      "phrases": [
+        "set temperature to 19 degrees",
+        "temperature 19 degrees",
+        "set climate to 19"
+      ]
     },
     {
       "id": "car.climate.set_temp.20",
-      "phrases": []
+      "phrases": [
+        "set temperature to 20 degrees",
+        "temperature 20 degrees",
+        "set climate to 20"
+      ]
     },
     {
       "id": "car.climate.set_temp.21",
-      "phrases": []
+      "phrases": [
+        "set temperature to 21 degrees",
+        "temperature 21 degrees",
+        "set climate to 21"
+      ]
     },
     {
       "id": "car.climate.set_temp.22",
-      "phrases": []
+      "phrases": [
+        "set temperature to 22 degrees",
+        "temperature 22 degrees",
+        "set climate to 22"
+      ]
     },
     {
       "id": "car.climate.set_temp.23",
-      "phrases": []
+      "phrases": [
+        "set temperature to 23 degrees",
+        "temperature 23 degrees",
+        "set climate to 23"
+      ]
     },
     {
       "id": "car.climate.set_temp.24",
-      "phrases": []
+      "phrases": [
+        "set temperature to 24 degrees",
+        "temperature 24 degrees",
+        "set climate to 24"
+      ]
     },
     {
       "id": "car.climate.set_temp.25",
-      "phrases": []
+      "phrases": [
+        "set temperature to 25 degrees",
+        "temperature 25 degrees",
+        "set climate to 25"
+      ]
     },
     {
       "id": "car.climate.set_temp.26",
-      "phrases": []
+      "phrases": [
+        "set temperature to 26 degrees",
+        "temperature 26 degrees",
+        "set climate to 26"
+      ]
     },
     {
       "id": "car.climate.set_temp.27",
-      "phrases": []
+      "phrases": [
+        "set temperature to 27 degrees",
+        "temperature 27 degrees",
+        "set climate to 27"
+      ]
     },
     {
       "id": "car.climate.set_temp.28",
-      "phrases": []
+      "phrases": [
+        "set temperature to 28 degrees",
+        "temperature 28 degrees",
+        "set climate to 28"
+      ]
     },
     {
       "id": "car.climate.set_temp.29",
-      "phrases": []
+      "phrases": [
+        "set temperature to 29 degrees",
+        "temperature 29 degrees",
+        "set climate to 29"
+      ]
     },
     {
       "id": "car.climate.set_temp.30",
-      "phrases": []
+      "phrases": [
+        "set temperature to 30 degrees",
+        "temperature 30 degrees",
+        "set climate to 30"
+      ]
     },
     {
       "id": "car.climate.temp_up",
-      "phrases": []
+      "phrases": [
+        "increase temperature",
+        "make it warmer",
+        "temperature up"
+      ]
     },
     {
       "id": "car.climate.temp_down",
-      "phrases": []
+      "phrases": [
+        "decrease temperature",
+        "make it cooler",
+        "temperature down"
+      ]
     },
     {
       "id": "car.climate.set_fan.1",
-      "phrases": []
+      "phrases": [
+        "set fan speed to 1",
+        "fan speed 1",
+        "blower level 1"
+      ]
     },
     {
       "id": "car.climate.set_fan.2",
-      "phrases": []
+      "phrases": [
+        "set fan speed to 2",
+        "fan speed 2",
+        "blower level 2"
+      ]
     },
     {
       "id": "car.climate.set_fan.3",
-      "phrases": []
+      "phrases": [
+        "set fan speed to 3",
+        "fan speed 3",
+        "blower level 3"
+      ]
     },
     {
       "id": "car.climate.set_fan.4",
-      "phrases": []
+      "phrases": [
+        "set fan speed to 4",
+        "fan speed 4",
+        "blower level 4"
+      ]
     },
     {
       "id": "car.climate.set_fan.5",
-      "phrases": []
+      "phrases": [
+        "set fan speed to 5",
+        "fan speed 5",
+        "blower level 5"
+      ]
     },
     {
       "id": "car.climate.set_fan.6",
-      "phrases": []
+      "phrases": [
+        "set fan speed to 6",
+        "fan speed 6",
+        "blower level 6"
+      ]
     },
     {
       "id": "car.climate.set_fan.7",
-      "phrases": []
+      "phrases": [
+        "set fan speed to 7",
+        "fan speed 7",
+        "blower level 7"
+      ]
     },
     {
       "id": "car.climate.set_fan.8",
-      "phrases": []
+      "phrases": [
+        "set fan speed to 8",
+        "fan speed 8",
+        "blower level 8"
+      ]
     },
     {
       "id": "car.climate.set_fan.9",
-      "phrases": []
+      "phrases": [
+        "set fan speed to 9",
+        "fan speed 9",
+        "blower level 9"
+      ]
     },
     {
       "id": "car.climate.fan_up",
-      "phrases": []
+      "phrases": [
+        "increase fan speed",
+        "fan up",
+        "blower up"
+      ]
     },
     {
       "id": "car.climate.fan_down",
-      "phrases": []
+      "phrases": [
+        "decrease fan speed",
+        "fan down",
+        "blower down"
+      ]
     },
     {
       "id": "car.climate.fan_max",
-      "phrases": []
+      "phrases": [
+        "set fan to maximum",
+        "max fan speed",
+        "blower maximum"
+      ]
     },
     {
       "id": "car.climate.air_face",
-      "phrases": []
+      "phrases": [
+        "set airflow to face",
+        "air to face",
+        "face vents on"
+      ]
     },
     {
       "id": "car.climate.air_feet",
-      "phrases": []
+      "phrases": [
+        "set airflow to feet",
+        "air to feet",
+        "footwell airflow"
+      ]
     },
     {
       "id": "car.climate.air_windshield",
-      "phrases": []
+      "phrases": [
+        "set airflow to windshield",
+        "air to windshield",
+        "windshield airflow"
+      ]
     },
     {
       "id": "car.climate.air_face_feet",
-      "phrases": []
+      "phrases": [
+        "set airflow to face and feet",
+        "air to face and feet",
+        "face plus feet vents"
+      ]
     },
     {
       "id": "car.climate.air_feet_windshield",
-      "phrases": []
+      "phrases": [
+        "set airflow to feet and windshield",
+        "air to feet and windshield",
+        "feet plus windshield airflow"
+      ]
     },
     {
       "id": "car.climate.air_face_windshield",
-      "phrases": []
+      "phrases": [
+        "set airflow to face and windshield",
+        "air to face and windshield",
+        "face plus windshield airflow"
+      ]
     },
     {
       "id": "car.climate.defrost_front_on",
-      "phrases": []
+      "phrases": [
+        "turn on front defrost",
+        "front defroster on",
+        "enable front windshield defrost"
+      ]
     },
     {
       "id": "car.climate.defrost_front_off",
-      "phrases": []
+      "phrases": [
+        "turn off front defrost",
+        "front defroster off",
+        "disable front windshield defrost"
+      ]
     },
     {
       "id": "car.climate.defrost_rear_on",
-      "phrases": []
+      "phrases": [
+        "turn on rear defrost",
+        "rear defroster on",
+        "enable rear windshield defrost"
+      ]
     },
     {
       "id": "car.climate.defrost_rear_off",
-      "phrases": []
+      "phrases": [
+        "turn off rear defrost",
+        "rear defroster off",
+        "disable rear windshield defrost"
+      ]
     },
     {
       "id": "car.climate.recirc_on",
-      "phrases": []
+      "phrases": [
+        "turn on air recirculation",
+        "enable recirculation",
+        "recirculation on"
+      ]
     },
     {
       "id": "car.climate.recirc_off",
-      "phrases": []
+      "phrases": [
+        "turn off air recirculation",
+        "disable recirculation",
+        "recirculation off"
+      ]
     },
     {
       "id": "car.climate.ventilate",
-      "phrases": []
+      "phrases": [
+        "ventilate cabin",
+        "start cabin ventilation",
+        "air out the cabin"
+      ]
     },
     {
       "id": "car.seat_heat.driver.0",
-      "phrases": []
+      "phrases": [
+        "turn off driver seat heating",
+        "driver seat heater off",
+        "disable driver seat heat"
+      ]
     },
     {
       "id": "car.seat_heat.driver.1",
-      "phrases": []
+      "phrases": [
+        "set driver seat heating to level 1",
+        "driver seat heater level 1",
+        "driver seat heat level 1"
+      ]
     },
     {
       "id": "car.seat_heat.driver.2",
-      "phrases": []
+      "phrases": [
+        "set driver seat heating to level 2",
+        "driver seat heater level 2",
+        "driver seat heat level 2"
+      ]
     },
     {
       "id": "car.seat_heat.driver.3",
-      "phrases": []
+      "phrases": [
+        "set driver seat heating to level 3",
+        "driver seat heater level 3",
+        "driver seat heat level 3"
+      ]
     },
     {
       "id": "car.seat_heat.passenger.0",
-      "phrases": []
+      "phrases": [
+        "turn off passenger seat heating",
+        "passenger seat heater off",
+        "disable passenger seat heat"
+      ]
     },
     {
       "id": "car.seat_heat.passenger.1",
-      "phrases": []
+      "phrases": [
+        "set passenger seat heating to level 1",
+        "passenger seat heater level 1",
+        "passenger seat heat level 1"
+      ]
     },
     {
       "id": "car.seat_heat.passenger.2",
-      "phrases": []
+      "phrases": [
+        "set passenger seat heating to level 2",
+        "passenger seat heater level 2",
+        "passenger seat heat level 2"
+      ]
     },
     {
       "id": "car.seat_heat.passenger.3",
-      "phrases": []
+      "phrases": [
+        "set passenger seat heating to level 3",
+        "passenger seat heater level 3",
+        "passenger seat heat level 3"
+      ]
     },
     {
       "id": "car.seat_heat.rear.0",
-      "phrases": []
+      "phrases": [
+        "turn off rear seats heating",
+        "rear seats heater off",
+        "disable rear seats heat"
+      ]
     },
     {
       "id": "car.seat_heat.rear.1",
-      "phrases": []
+      "phrases": [
+        "set rear seats heating to level 1",
+        "rear seats heater level 1",
+        "rear seats heat level 1"
+      ]
     },
     {
       "id": "car.seat_heat.rear.2",
-      "phrases": []
+      "phrases": [
+        "set rear seats heating to level 2",
+        "rear seats heater level 2",
+        "rear seats heat level 2"
+      ]
     },
     {
       "id": "car.seat_heat.rear.3",
-      "phrases": []
+      "phrases": [
+        "set rear seats heating to level 3",
+        "rear seats heater level 3",
+        "rear seats heat level 3"
+      ]
     },
     {
       "id": "car.seat_heat.front.0",
-      "phrases": []
+      "phrases": [
+        "turn off front seats heating",
+        "front seats heater off",
+        "disable front seats heat"
+      ]
     },
     {
       "id": "car.seat_heat.front.1",
-      "phrases": []
+      "phrases": [
+        "set front seats heating to level 1",
+        "front seats heater level 1",
+        "front seats heat level 1"
+      ]
     },
     {
       "id": "car.seat_heat.front.2",
-      "phrases": []
+      "phrases": [
+        "set front seats heating to level 2",
+        "front seats heater level 2",
+        "front seats heat level 2"
+      ]
     },
     {
       "id": "car.seat_heat.front.3",
-      "phrases": []
+      "phrases": [
+        "set front seats heating to level 3",
+        "front seats heater level 3",
+        "front seats heat level 3"
+      ]
     },
     {
       "id": "car.seat_vent.driver.0",
-      "phrases": []
+      "phrases": [
+        "turn off driver seat ventilation",
+        "driver seat ventilation off",
+        "disable driver seat cooling"
+      ]
     },
     {
       "id": "car.seat_vent.driver.1",
-      "phrases": []
+      "phrases": [
+        "set driver seat ventilation to level 1",
+        "driver seat ventilation level 1",
+        "driver seat cooling level 1"
+      ]
     },
     {
       "id": "car.seat_vent.driver.2",
-      "phrases": []
+      "phrases": [
+        "set driver seat ventilation to level 2",
+        "driver seat ventilation level 2",
+        "driver seat cooling level 2"
+      ]
     },
     {
       "id": "car.seat_vent.driver.3",
-      "phrases": []
+      "phrases": [
+        "set driver seat ventilation to level 3",
+        "driver seat ventilation level 3",
+        "driver seat cooling level 3"
+      ]
     },
     {
       "id": "car.seat_vent.passenger.0",
-      "phrases": []
+      "phrases": [
+        "turn off passenger seat ventilation",
+        "passenger seat ventilation off",
+        "disable passenger seat cooling"
+      ]
     },
     {
       "id": "car.seat_vent.passenger.1",
-      "phrases": []
+      "phrases": [
+        "set passenger seat ventilation to level 1",
+        "passenger seat ventilation level 1",
+        "passenger seat cooling level 1"
+      ]
     },
     {
       "id": "car.seat_vent.passenger.2",
-      "phrases": []
+      "phrases": [
+        "set passenger seat ventilation to level 2",
+        "passenger seat ventilation level 2",
+        "passenger seat cooling level 2"
+      ]
     },
     {
       "id": "car.seat_vent.passenger.3",
-      "phrases": []
+      "phrases": [
+        "set passenger seat ventilation to level 3",
+        "passenger seat ventilation level 3",
+        "passenger seat cooling level 3"
+      ]
     },
     {
       "id": "car.steering_heat.0",
-      "phrases": []
+      "phrases": [
+        "turn off steering wheel heating",
+        "steering wheel heater off",
+        "disable steering heat"
+      ]
     },
     {
       "id": "car.steering_heat.1",
-      "phrases": []
+      "phrases": [
+        "set steering wheel heating to level 1",
+        "steering wheel heater level 1",
+        "steering heat level 1"
+      ]
     },
     {
       "id": "car.steering_heat.2",
-      "phrases": []
+      "phrases": [
+        "set steering wheel heating to level 2",
+        "steering wheel heater level 2",
+        "steering heat level 2"
+      ]
     },
     {
       "id": "car.steering_heat.3",
-      "phrases": []
+      "phrases": [
+        "set steering wheel heating to level 3",
+        "steering wheel heater level 3",
+        "steering heat level 3"
+      ]
     },
     {
       "id": "car.all_heat_off",
-      "phrases": []
+      "phrases": [
+        "turn off all heating",
+        "disable all heaters",
+        "all heat off"
+      ]
     },
     {
       "id": "car.window.driver.0",
-      "phrases": []
+      "phrases": [
+        "close driver window",
+        "driver window closed",
+        "shut driver window"
+      ]
     },
     {
       "id": "car.window.driver.10",
-      "phrases": []
+      "phrases": [
+        "set driver window to 10 percent",
+        "driver window 10 percent",
+        "open driver window to 10"
+      ]
     },
     {
       "id": "car.window.driver.20",
-      "phrases": []
+      "phrases": [
+        "set driver window to 20 percent",
+        "driver window 20 percent",
+        "open driver window to 20"
+      ]
     },
     {
       "id": "car.window.driver.30",
-      "phrases": []
+      "phrases": [
+        "set driver window to 30 percent",
+        "driver window 30 percent",
+        "open driver window to 30"
+      ]
     },
     {
       "id": "car.window.driver.40",
-      "phrases": []
+      "phrases": [
+        "set driver window to 40 percent",
+        "driver window 40 percent",
+        "open driver window to 40"
+      ]
     },
     {
       "id": "car.window.driver.50",
-      "phrases": []
+      "phrases": [
+        "set driver window to 50 percent",
+        "driver window 50 percent",
+        "open driver window to 50"
+      ]
     },
     {
       "id": "car.window.driver.60",
-      "phrases": []
+      "phrases": [
+        "set driver window to 60 percent",
+        "driver window 60 percent",
+        "open driver window to 60"
+      ]
     },
     {
       "id": "car.window.driver.70",
-      "phrases": []
+      "phrases": [
+        "set driver window to 70 percent",
+        "driver window 70 percent",
+        "open driver window to 70"
+      ]
     },
     {
       "id": "car.window.driver.80",
-      "phrases": []
+      "phrases": [
+        "set driver window to 80 percent",
+        "driver window 80 percent",
+        "open driver window to 80"
+      ]
     },
     {
       "id": "car.window.driver.90",
-      "phrases": []
+      "phrases": [
+        "set driver window to 90 percent",
+        "driver window 90 percent",
+        "open driver window to 90"
+      ]
     },
     {
       "id": "car.window.driver.100",
-      "phrases": []
+      "phrases": [
+        "open driver window fully",
+        "driver window one hundred percent",
+        "fully open driver window"
+      ]
     },
     {
       "id": "car.window.passenger.0",
-      "phrases": []
+      "phrases": [
+        "close passenger window",
+        "passenger window closed",
+        "shut passenger window"
+      ]
     },
     {
       "id": "car.window.passenger.10",
-      "phrases": []
+      "phrases": [
+        "set passenger window to 10 percent",
+        "passenger window 10 percent",
+        "open passenger window to 10"
+      ]
     },
     {
       "id": "car.window.passenger.20",
-      "phrases": []
+      "phrases": [
+        "set passenger window to 20 percent",
+        "passenger window 20 percent",
+        "open passenger window to 20"
+      ]
     },
     {
       "id": "car.window.passenger.30",
-      "phrases": []
+      "phrases": [
+        "set passenger window to 30 percent",
+        "passenger window 30 percent",
+        "open passenger window to 30"
+      ]
     },
     {
       "id": "car.window.passenger.40",
-      "phrases": []
+      "phrases": [
+        "set passenger window to 40 percent",
+        "passenger window 40 percent",
+        "open passenger window to 40"
+      ]
     },
     {
       "id": "car.window.passenger.50",
-      "phrases": []
+      "phrases": [
+        "set passenger window to 50 percent",
+        "passenger window 50 percent",
+        "open passenger window to 50"
+      ]
     },
     {
       "id": "car.window.passenger.60",
-      "phrases": []
+      "phrases": [
+        "set passenger window to 60 percent",
+        "passenger window 60 percent",
+        "open passenger window to 60"
+      ]
     },
     {
       "id": "car.window.passenger.70",
-      "phrases": []
+      "phrases": [
+        "set passenger window to 70 percent",
+        "passenger window 70 percent",
+        "open passenger window to 70"
+      ]
     },
     {
       "id": "car.window.passenger.80",
-      "phrases": []
+      "phrases": [
+        "set passenger window to 80 percent",
+        "passenger window 80 percent",
+        "open passenger window to 80"
+      ]
     },
     {
       "id": "car.window.passenger.90",
-      "phrases": []
+      "phrases": [
+        "set passenger window to 90 percent",
+        "passenger window 90 percent",
+        "open passenger window to 90"
+      ]
     },
     {
       "id": "car.window.passenger.100",
-      "phrases": []
+      "phrases": [
+        "open passenger window fully",
+        "passenger window one hundred percent",
+        "fully open passenger window"
+      ]
     },
     {
       "id": "car.window.rear_left.0",
-      "phrases": []
+      "phrases": [
+        "close left rear window",
+        "left rear window closed",
+        "shut left rear window"
+      ]
     },
     {
       "id": "car.window.rear_left.10",
-      "phrases": []
+      "phrases": [
+        "set left rear window to 10 percent",
+        "left rear window 10 percent",
+        "open left rear window to 10"
+      ]
     },
     {
       "id": "car.window.rear_left.20",
-      "phrases": []
+      "phrases": [
+        "set left rear window to 20 percent",
+        "left rear window 20 percent",
+        "open left rear window to 20"
+      ]
     },
     {
       "id": "car.window.rear_left.30",
-      "phrases": []
+      "phrases": [
+        "set left rear window to 30 percent",
+        "left rear window 30 percent",
+        "open left rear window to 30"
+      ]
     },
     {
       "id": "car.window.rear_left.40",
-      "phrases": []
+      "phrases": [
+        "set left rear window to 40 percent",
+        "left rear window 40 percent",
+        "open left rear window to 40"
+      ]
     },
     {
       "id": "car.window.rear_left.50",
-      "phrases": []
+      "phrases": [
+        "set left rear window to 50 percent",
+        "left rear window 50 percent",
+        "open left rear window to 50"
+      ]
     },
     {
       "id": "car.window.rear_left.60",
-      "phrases": []
+      "phrases": [
+        "set left rear window to 60 percent",
+        "left rear window 60 percent",
+        "open left rear window to 60"
+      ]
     },
     {
       "id": "car.window.rear_left.70",
-      "phrases": []
+      "phrases": [
+        "set left rear window to 70 percent",
+        "left rear window 70 percent",
+        "open left rear window to 70"
+      ]
     },
     {
       "id": "car.window.rear_left.80",
-      "phrases": []
+      "phrases": [
+        "set left rear window to 80 percent",
+        "left rear window 80 percent",
+        "open left rear window to 80"
+      ]
     },
     {
       "id": "car.window.rear_left.90",
-      "phrases": []
+      "phrases": [
+        "set left rear window to 90 percent",
+        "left rear window 90 percent",
+        "open left rear window to 90"
+      ]
     },
     {
       "id": "car.window.rear_left.100",
-      "phrases": []
+      "phrases": [
+        "open left rear window fully",
+        "left rear window one hundred percent",
+        "fully open left rear window"
+      ]
     },
     {
       "id": "car.window.rear_right.0",
-      "phrases": []
+      "phrases": [
+        "close right rear window",
+        "right rear window closed",
+        "shut right rear window"
+      ]
     },
     {
       "id": "car.window.rear_right.10",
-      "phrases": []
+      "phrases": [
+        "set right rear window to 10 percent",
+        "right rear window 10 percent",
+        "open right rear window to 10"
+      ]
     },
     {
       "id": "car.window.rear_right.20",
-      "phrases": []
+      "phrases": [
+        "set right rear window to 20 percent",
+        "right rear window 20 percent",
+        "open right rear window to 20"
+      ]
     },
     {
       "id": "car.window.rear_right.30",
-      "phrases": []
+      "phrases": [
+        "set right rear window to 30 percent",
+        "right rear window 30 percent",
+        "open right rear window to 30"
+      ]
     },
     {
       "id": "car.window.rear_right.40",
-      "phrases": []
+      "phrases": [
+        "set right rear window to 40 percent",
+        "right rear window 40 percent",
+        "open right rear window to 40"
+      ]
     },
     {
       "id": "car.window.rear_right.50",
-      "phrases": []
+      "phrases": [
+        "set right rear window to 50 percent",
+        "right rear window 50 percent",
+        "open right rear window to 50"
+      ]
     },
     {
       "id": "car.window.rear_right.60",
-      "phrases": []
+      "phrases": [
+        "set right rear window to 60 percent",
+        "right rear window 60 percent",
+        "open right rear window to 60"
+      ]
     },
     {
       "id": "car.window.rear_right.70",
-      "phrases": []
+      "phrases": [
+        "set right rear window to 70 percent",
+        "right rear window 70 percent",
+        "open right rear window to 70"
+      ]
     },
     {
       "id": "car.window.rear_right.80",
-      "phrases": []
+      "phrases": [
+        "set right rear window to 80 percent",
+        "right rear window 80 percent",
+        "open right rear window to 80"
+      ]
     },
     {
       "id": "car.window.rear_right.90",
-      "phrases": []
+      "phrases": [
+        "set right rear window to 90 percent",
+        "right rear window 90 percent",
+        "open right rear window to 90"
+      ]
     },
     {
       "id": "car.window.rear_right.100",
-      "phrases": []
+      "phrases": [
+        "open right rear window fully",
+        "right rear window one hundred percent",
+        "fully open right rear window"
+      ]
     },
     {
       "id": "car.window.all_close",
-      "phrases": []
+      "phrases": [
+        "close all windows",
+        "all windows close",
+        "shut all windows"
+      ]
     },
     {
       "id": "car.window.all_open_half",
-      "phrases": []
+      "phrases": [
+        "open all windows halfway",
+        "all windows fifty percent",
+        "open all windows to half"
+      ]
     },
     {
       "id": "car.roof.0",
-      "phrases": []
+      "phrases": [
+        "close sunroof",
+        "sunroof closed",
+        "shut roof"
+      ]
     },
     {
       "id": "car.roof.10",
-      "phrases": []
+      "phrases": [
+        "set sunroof to 10 percent",
+        "sunroof 10 percent",
+        "open roof to 10"
+      ]
     },
     {
       "id": "car.roof.20",
-      "phrases": []
+      "phrases": [
+        "set sunroof to 20 percent",
+        "sunroof 20 percent",
+        "open roof to 20"
+      ]
     },
     {
       "id": "car.roof.30",
-      "phrases": []
+      "phrases": [
+        "set sunroof to 30 percent",
+        "sunroof 30 percent",
+        "open roof to 30"
+      ]
     },
     {
       "id": "car.roof.40",
-      "phrases": []
+      "phrases": [
+        "set sunroof to 40 percent",
+        "sunroof 40 percent",
+        "open roof to 40"
+      ]
     },
     {
       "id": "car.roof.50",
-      "phrases": []
+      "phrases": [
+        "set sunroof to 50 percent",
+        "sunroof 50 percent",
+        "open roof to 50"
+      ]
     },
     {
       "id": "car.roof.60",
-      "phrases": []
+      "phrases": [
+        "set sunroof to 60 percent",
+        "sunroof 60 percent",
+        "open roof to 60"
+      ]
     },
     {
       "id": "car.roof.70",
-      "phrases": []
+      "phrases": [
+        "set sunroof to 70 percent",
+        "sunroof 70 percent",
+        "open roof to 70"
+      ]
     },
     {
       "id": "car.roof.80",
-      "phrases": []
+      "phrases": [
+        "set sunroof to 80 percent",
+        "sunroof 80 percent",
+        "open roof to 80"
+      ]
     },
     {
       "id": "car.roof.90",
-      "phrases": []
+      "phrases": [
+        "set sunroof to 90 percent",
+        "sunroof 90 percent",
+        "open roof to 90"
+      ]
     },
     {
       "id": "car.roof.100",
-      "phrases": []
+      "phrases": [
+        "open sunroof fully",
+        "sunroof one hundred percent",
+        "fully open roof"
+      ]
     },
     {
       "id": "car.shade.0",
-      "phrases": []
+      "phrases": [
+        "close sunshade",
+        "sunshade closed",
+        "shut shade"
+      ]
     },
     {
       "id": "car.shade.10",
-      "phrases": []
+      "phrases": [
+        "set sunshade to 10 percent",
+        "sunshade 10 percent",
+        "open shade to 10"
+      ]
     },
     {
       "id": "car.shade.20",
-      "phrases": []
+      "phrases": [
+        "set sunshade to 20 percent",
+        "sunshade 20 percent",
+        "open shade to 20"
+      ]
     },
     {
       "id": "car.shade.30",
-      "phrases": []
+      "phrases": [
+        "set sunshade to 30 percent",
+        "sunshade 30 percent",
+        "open shade to 30"
+      ]
     },
     {
       "id": "car.shade.40",
-      "phrases": []
+      "phrases": [
+        "set sunshade to 40 percent",
+        "sunshade 40 percent",
+        "open shade to 40"
+      ]
     },
     {
       "id": "car.shade.50",
-      "phrases": []
+      "phrases": [
+        "set sunshade to 50 percent",
+        "sunshade 50 percent",
+        "open shade to 50"
+      ]
     },
     {
       "id": "car.shade.60",
-      "phrases": []
+      "phrases": [
+        "set sunshade to 60 percent",
+        "sunshade 60 percent",
+        "open shade to 60"
+      ]
     },
     {
       "id": "car.shade.70",
-      "phrases": []
+      "phrases": [
+        "set sunshade to 70 percent",
+        "sunshade 70 percent",
+        "open shade to 70"
+      ]
     },
     {
       "id": "car.shade.80",
-      "phrases": []
+      "phrases": [
+        "set sunshade to 80 percent",
+        "sunshade 80 percent",
+        "open shade to 80"
+      ]
     },
     {
       "id": "car.shade.90",
-      "phrases": []
+      "phrases": [
+        "set sunshade to 90 percent",
+        "sunshade 90 percent",
+        "open shade to 90"
+      ]
     },
     {
       "id": "car.shade.100",
-      "phrases": []
+      "phrases": [
+        "open sunshade fully",
+        "sunshade one hundred percent",
+        "fully open shade"
+      ]
     },
     {
       "id": "car.close_all",
-      "phrases": []
+      "phrases": [
+        "close everything",
+        "close all openings",
+        "secure all openings"
+      ]
     },
     {
       "id": "car.trunk.open",
-      "phrases": []
+      "phrases": [
+        "open trunk",
+        "open the boot",
+        "trunk open"
+      ]
     },
     {
       "id": "car.trunk.close",
-      "phrases": []
+      "phrases": [
+        "close trunk",
+        "close the boot",
+        "trunk close"
+      ]
     },
     {
       "id": "car.wipers.service_on",
-      "phrases": []
+      "phrases": [
+        "enable wiper service mode",
+        "wiper service mode on",
+        "turn on service wiper mode"
+      ]
     },
     {
       "id": "car.wipers.service_off",
-      "phrases": []
+      "phrases": [
+        "disable wiper service mode",
+        "wiper service mode off",
+        "turn off service wiper mode"
+      ]
     },
     {
       "id": "car.lights.auto_on",
-      "phrases": []
+      "phrases": [
+        "turn on automatic lights",
+        "auto lights on",
+        "enable auto headlights"
+      ]
     },
     {
       "id": "car.lights.auto_off",
-      "phrases": []
+      "phrases": [
+        "turn off automatic lights",
+        "auto lights off",
+        "disable auto headlights"
+      ]
     },
     {
       "id": "car.lights.low_beam_on",
-      "phrases": []
+      "phrases": [
+        "turn on low beam",
+        "low beam on",
+        "enable dipped headlights"
+      ]
     },
     {
       "id": "car.lights.low_beam_off",
-      "phrases": []
+      "phrases": [
+        "turn off low beam",
+        "low beam off",
+        "disable dipped headlights"
+      ]
     },
     {
       "id": "car.lights.position_on",
-      "phrases": []
+      "phrases": [
+        "turn on parking lights",
+        "position lights on",
+        "parking lights on"
+      ]
     },
     {
       "id": "car.lights.position_off",
-      "phrases": []
+      "phrases": [
+        "turn off parking lights",
+        "position lights off",
+        "parking lights off"
+      ]
     },
     {
       "id": "car.lights.fog_rear_on",
-      "phrases": []
+      "phrases": [
+        "turn on rear fog light",
+        "rear fog on",
+        "enable rear fog lamp"
+      ]
     },
     {
       "id": "car.lights.fog_rear_off",
-      "phrases": []
+      "phrases": [
+        "turn off rear fog light",
+        "rear fog off",
+        "disable rear fog lamp"
+      ]
     },
     {
       "id": "car.lights.all_on",
-      "phrases": []
+      "phrases": [
+        "turn on all lights",
+        "all lights on",
+        "enable all lighting"
+      ]
     },
     {
       "id": "car.lights.all_off",
-      "phrases": []
+      "phrases": [
+        "turn off all lights",
+        "all lights off",
+        "disable all lighting"
+      ]
     },
     {
       "id": "car.drive_mode.sport.on",
-      "phrases": []
+      "phrases": [
+        "enable on mode",
+        "set drive mode to on",
+        "on mode on"
+      ]
     },
     {
       "id": "car.drive_mode.offroad.on",
-      "phrases": []
+      "phrases": [
+        "enable on mode",
+        "set drive mode to on",
+        "on mode on"
+      ]
     },
     {
       "id": "car.drive_mode.eco.on",
-      "phrases": []
+      "phrases": [
+        "enable on mode",
+        "set drive mode to on",
+        "on mode on"
+      ]
     },
     {
       "id": "car.drive_mode.comfort.on",
-      "phrases": []
+      "phrases": [
+        "enable on mode",
+        "set drive mode to on",
+        "on mode on"
+      ]
     },
     {
       "id": "car.drive_mode.smart.on",
-      "phrases": []
+      "phrases": [
+        "enable on mode",
+        "set drive mode to on",
+        "on mode on"
+      ]
     },
     {
       "id": "car.drive_mode.snow.on",
-      "phrases": []
+      "phrases": [
+        "enable on mode",
+        "set drive mode to on",
+        "on mode on"
+      ]
     },
     {
       "id": "car.drive_mode.sand.on",
-      "phrases": []
+      "phrases": [
+        "enable on mode",
+        "set drive mode to on",
+        "on mode on"
+      ]
     },
     {
       "id": "car.drive_mode.mud.on",
-      "phrases": []
+      "phrases": [
+        "enable on mode",
+        "set drive mode to on",
+        "on mode on"
+      ]
     },
     {
       "id": "car.drive_mode.rocks.on",
-      "phrases": []
+      "phrases": [
+        "enable on mode",
+        "set drive mode to on",
+        "on mode on"
+      ]
     },
     {
       "id": "car.drive_mode.power.on",
-      "phrases": []
+      "phrases": [
+        "enable on mode",
+        "set drive mode to on",
+        "on mode on"
+      ]
     },
     {
       "id": "car.drive_mode.restore_prev",
-      "phrases": []
+      "phrases": [
+        "restore previous drive mode",
+        "return to previous drive mode",
+        "revert drive mode"
+      ]
     },
     {
       "id": "car.status.fuel",
-      "phrases": []
+      "phrases": [
+        "show fuel level",
+        "fuel status",
+        "how much fuel is left"
+      ]
     },
     {
       "id": "car.status.range",
-      "phrases": []
+      "phrases": [
+        "show driving range",
+        "remaining range",
+        "how far can i drive"
+      ]
     },
     {
       "id": "car.status.temp_outside",
-      "phrases": []
+      "phrases": [
+        "show outside temperature",
+        "outside temperature",
+        "what is the outside temperature"
+      ]
     },
     {
       "id": "car.status.temp_cabin",
-      "phrases": []
+      "phrases": [
+        "show cabin temperature",
+        "cabin temperature",
+        "what is cabin temperature"
+      ]
     },
     {
       "id": "hud.projection.toggle",
-      "phrases": []
+      "phrases": [
+        "toggle head up display",
+        "switch hud projection",
+        "hud on off"
+      ]
     },
     {
       "id": "media.play_pause",
-      "phrases": []
+      "phrases": [
+        "play or pause media",
+        "toggle play pause",
+        "media play pause"
+      ]
     },
     {
       "id": "car.drive_mode.sport_plus.on",
-      "phrases": []
+      "phrases": [
+        "enable on mode",
+        "set drive mode to on",
+        "on mode on"
+      ]
     },
     {
       "id": "car.drive_mode.power.on",
-      "phrases": []
+      "phrases": [
+        "enable on mode",
+        "set drive mode to on",
+        "on mode on"
+      ]
     },
     {
       "id": "car.drive_mode.intelligent.on",
-      "phrases": []
+      "phrases": [
+        "enable on mode",
+        "set drive mode to on",
+        "on mode on"
+      ]
     },
     {
       "id": "car.engine.start_stop.toggle",
-      "phrases": []
+      "phrases": [
+        "toggle engine start stop",
+        "switch start stop",
+        "engine start stop on off"
+      ]
     },
     {
       "id": "car.prepare.winter",
-      "phrases": []
+      "phrases": [
+        "prepare car for winter",
+        "winter preparation mode",
+        "set winter preset"
+      ]
     },
     {
       "id": "car.prepare.summer",
-      "phrases": []
+      "phrases": [
+        "prepare car for summer",
+        "summer preparation mode",
+        "set summer preset"
+      ]
     },
     {
       "id": "car.prepare.default",
-      "phrases": []
+      "phrases": [
+        "restore default preparation",
+        "default vehicle setup",
+        "set default preset"
+      ]
     },
     {
       "id": "car.climate.air_soft",
-      "phrases": []
+      "phrases": [
+        "set airflow to soft",
+        "soft airflow mode",
+        "gentle air mode"
+      ]
     },
     {
       "id": "car.climate.air_strong",
-      "phrases": []
+      "phrases": [
+        "set airflow to strong",
+        "strong airflow mode",
+        "powerful air mode"
+      ]
     },
     {
       "id": "car.lights.cabin_driver.toggle",
-      "phrases": []
+      "phrases": [
+        "toggle driver cabin light",
+        "switch driver interior light",
+        "driver cabin light toggle"
+      ]
     },
     {
       "id": "car.lights.cabin_passenger.toggle",
-      "phrases": []
+      "phrases": [
+        "toggle passenger cabin light",
+        "switch passenger interior light",
+        "passenger cabin light toggle"
+      ]
     },
     {
       "id": "car.lights.flashlight.toggle",
-      "phrases": []
+      "phrases": [
+        "toggle flashlight",
+        "switch flashlight",
+        "flashlight toggle"
+      ]
     },
     {
       "id": "car.climate.hot",
-      "phrases": []
+      "phrases": [
+        "set climate to hot",
+        "make cabin warm",
+        "heat the cabin"
+      ]
     },
     {
       "id": "car.climate.cold",
-      "phrases": []
+      "phrases": [
+        "set climate to cold",
+        "make cabin cool",
+        "cool the cabin"
+      ]
     }
   ]
 }
