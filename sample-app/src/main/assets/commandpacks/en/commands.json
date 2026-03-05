@@ -24,7 +24,7 @@
       ]
     },
     {
-      "id": "car.climate.ac_on",
+      "id": "car.climate.ac.on",
       "phrases": [
         "turn on air conditioning",
         "ac on",
@@ -56,7 +56,7 @@
       ]
     },
     {
-      "id": "car.climate.auto_on",
+      "id": "car.climate.auto.on",
       "phrases": [
         "enable auto climate mode",
         "climate auto mode on",
@@ -997,6 +997,14 @@
         "close all windows",
         "all windows close",
         "shut all windows"
+      ]
+    },
+    {
+      "id": "car.window.all_open",
+      "phrases": [
+        "open all windows",
+        "all windows open",
+        "fully open all windows"
       ]
     },
     {
