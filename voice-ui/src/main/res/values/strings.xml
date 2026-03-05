@@ -1,4 +1,8 @@
 <resources>
-    <string name="voice_ui_listening">Listening</string>
-    <string name="voice_ui_idle">Idle</string>
+    <string name="voice_ui_status_listening">Listening</string>
+    <string name="voice_ui_status_idle">Idle</string>
+    <string name="voice_ui_status_command_confidence">Command: %1$s (%2$d%%)</string>
+    <string name="voice_ui_status_low_confidence">Low confidence (%1$d%%): %2$s</string>
+    <string name="voice_ui_status_no_match">No matching command recognized</string>
+    <string name="voice_ui_status_error">Error: %1$s</string>
 </resources>

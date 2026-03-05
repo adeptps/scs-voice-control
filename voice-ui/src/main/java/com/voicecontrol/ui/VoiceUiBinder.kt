@@ -20,17 +20,35 @@ class VoiceUiBinder(
 
     private val listener: (VoiceEvent) -> Unit = { e ->
         when (e) {
-            is VoiceEvent.ListeningStarted -> statusText.text = "Listening"
-            is VoiceEvent.ListeningStopped -> statusText.text = "Idle"
+            is VoiceEvent.ListeningStarted -> statusText.text = context.getString(R.string.voice_ui_status_listening)
+            is VoiceEvent.ListeningStopped -> statusText.text = context.getString(R.string.voice_ui_status_idle)
             is VoiceEvent.PartialText -> statusText.text = e.text
             is VoiceEvent.FinalText -> statusText.text = e.text
             is VoiceEvent.CommandRecognized -> {
-                statusText.text = "Command: ${e.command.actionId}"
-                if (showToasts) Toast.makeText(context, "Command: ${e.command.actionId}", Toast.LENGTH_SHORT).show()
+                val percent = (e.command.confidence * 100f).toInt().coerceIn(0, 100)
+                val message = context.getString(
+                    R.string.voice_ui_status_command_confidence,
+                    e.command.actionId,
+                    percent,
+                )
+                statusText.text = message
+                if (showToasts) Toast.makeText(context, message, Toast.LENGTH_SHORT).show()
+            }
+            is VoiceEvent.NoCommandMatch -> {
+                val bestActionId = e.bestActionId
+                val confidence = e.confidence
+                val message = if (bestActionId != null && confidence != null) {
+                    val percent = (confidence * 100f).toInt().coerceIn(0, 100)
+                    context.getString(R.string.voice_ui_status_low_confidence, percent, bestActionId)
+                } else {
+                    context.getString(R.string.voice_ui_status_no_match)
+                }
+                statusText.text = message
             }
             is VoiceEvent.Error -> {
-                statusText.text = "Error: ${e.message}"
-                if (showToasts) Toast.makeText(context, e.message, Toast.LENGTH_SHORT).show()
+                val message = context.getString(R.string.voice_ui_status_error, e.message)
+                statusText.text = message
+                if (showToasts) Toast.makeText(context, message, Toast.LENGTH_SHORT).show()
             }
         }
     }

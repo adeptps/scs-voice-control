@@ -18,8 +18,11 @@ class FixedPhraseInterpreter(
     override fun interpret(localeTag: String, text: String): VoiceCommand? {
         val sets = commandSets()
         for (s in sets) {
-            val id = s.match(localeTag, text)
-            if (id != null) return actionIdParser.toCommand(id, rawText = text)
+            val match = s.matchDetailed(localeTag, text) ?: continue
+            return actionIdParser.toCommand(match.actionId, rawText = text).copy(
+                confidence = match.confidence,
+                matchedPhrase = match.matchedPhrase,
+            )
         }
         return null
     }

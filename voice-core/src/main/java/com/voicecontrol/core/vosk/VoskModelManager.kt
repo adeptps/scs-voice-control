@@ -44,7 +44,22 @@ class VoskModelManager(
     fun resolveModelDir(locale: Locale): File? {
         val installed = resolveInstalledDir(locale) ?: return null
         val dir = File(baseDir, installed)
-        return if (dir.exists()) dir else null
+        if (!dir.exists()) return null
+
+        if (looksLikeVoskModelDir(dir)) return dir
+
+        // Official Vosk zips often contain a single nested top-level directory.
+        val nested = dir.listFiles()
+            ?.asSequence()
+            ?.filter { it.isDirectory }
+            ?.firstOrNull { looksLikeVoskModelDir(it) }
+        return nested ?: dir
+    }
+
+    private fun looksLikeVoskModelDir(dir: File): Boolean {
+        if (!dir.exists() || !dir.isDirectory) return false
+        return File(dir, "am").isDirectory &&
+            (File(dir, "conf").isDirectory || File(dir, "graph").isDirectory)
     }
 
     private fun loadRegistry(): JSONObject {

@@ -1,0 +1,8 @@
+<resources>
+    <string name="voice_ui_status_listening">يستمع الآن</string>
+    <string name="voice_ui_status_idle">جاهز</string>
+    <string name="voice_ui_status_command_confidence">الأمر: %1$s (%2$d%%)</string>
+    <string name="voice_ui_status_low_confidence">ثقة منخفضة (%1$d%%): %2$s</string>
+    <string name="voice_ui_status_no_match">لم يتم التعرف على أمر مطابق</string>
+    <string name="voice_ui_status_error">خطأ: %1$s</string>
+</resources>

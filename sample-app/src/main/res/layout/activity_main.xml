@@ -10,7 +10,7 @@
         android:id="@+id/title"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Voice Control Sample"
+        android:text="@string/title_voice_control_sample"
         android:textSize="20sp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -20,7 +20,7 @@
         android:id="@+id/btnMic"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Tap to speak, long-press to stop"
+        android:text="@string/btn_tap_to_speak_long_press_to_stop"
         app:layout_constraintTop_toBottomOf="@id/title"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -30,7 +30,7 @@
         android:id="@+id/txtStatus"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Idle"
+        android:text="@string/status_idle"
         android:textSize="16sp"
         app:layout_constraintTop_toBottomOf="@id/btnMic"
         app:layout_constraintStart_toStartOf="parent"
@@ -42,16 +42,18 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        app:endIconMode="dropdown_menu"
         app:layout_constraintTop_toBottomOf="@id/txtStatus"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/edtLocale"
+        <com.google.android.material.textfield.MaterialAutoCompleteTextView
+            android:id="@+id/dropdownLocale"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Locale tag (ru-RU, en-US, ar)"
-            android:text="ru-RU" />
+            android:hint="@string/hint_language"
+            android:inputType="none"
+            android:focusable="false" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -60,16 +62,18 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
+        app:endIconMode="dropdown_menu"
         app:layout_constraintTop_toBottomOf="@id/inputLocale"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/edtMode"
+        <com.google.android.material.textfield.MaterialAutoCompleteTextView
+            android:id="@+id/dropdownMode"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Engine mode (AUTO, OFFLINE_ONLY, ONLINE_ONLY)"
-            android:text="AUTO" />
+            android:hint="@string/hint_recognition_mode"
+            android:inputType="none"
+            android:focusable="false" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -78,7 +82,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
-        android:text="Manual online enabled"
+        android:text="@string/chk_manual_online_enabled"
         android:checked="true"
         app:layout_constraintTop_toBottomOf="@id/inputMode"
         app:layout_constraintStart_toStartOf="parent"
@@ -89,7 +93,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-        android:text="Auto switch to online when internet is available"
+        android:text="@string/chk_auto_switch_online"
         android:checked="true"
         app:layout_constraintTop_toBottomOf="@id/chkOnline"
         app:layout_constraintStart_toStartOf="parent"
@@ -100,7 +104,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Tip: Install a Vosk model first, then try Russian phrases from assets command pack."
+        android:text="@string/hint_install_arabic_model"
         app:layout_constraintTop_toBottomOf="@id/chkAutoOnline"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />

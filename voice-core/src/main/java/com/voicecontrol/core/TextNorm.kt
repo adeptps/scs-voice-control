@@ -24,6 +24,7 @@ object TextNorm {
     private fun normalizeArabic(s: String): String {
         val withoutDiacritics = s.replace(Regex("[\\u064B-\\u065F\\u0670]"), "")
         val unified = withoutDiacritics
+            .replace("\u0640", "") // tatweel
             .replace('أ', 'ا')
             .replace('إ', 'ا')
             .replace('آ', 'ا')
@@ -31,10 +32,16 @@ object TextNorm {
             .replace('ؤ', 'و')
             .replace('ئ', 'ي')
             .replace('ة', 'ه')
+            .replace(Regex("(.)\\1{2,}"), "$1") // collapse elongated letters
 
-        return unified
+        val compact = unified
             .replace(Regex("[\\p{Punct}]+"), " ")
             .replace(Regex("\\s+"), " ")
+            .trim()
+
+        // Remove common politeness fillers that may come from noisy speech.
+        return compact
+            .replace(Regex("^(لو سمحت|من فضلك|يا سياره|يا سيارة)\\s+"), "")
             .trim()
     }
 }

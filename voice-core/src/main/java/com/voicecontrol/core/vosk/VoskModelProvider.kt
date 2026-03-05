@@ -3,6 +3,7 @@ package com.voicecontrol.core.vosk
 import android.content.Context
 import android.os.Handler
 import android.os.Looper
+import org.json.JSONObject
 import org.vosk.Model
 import org.vosk.Recognizer
 import org.vosk.android.RecognitionListener
@@ -50,6 +51,10 @@ class VoskModelProvider(
         return grammarProvider?.phrasesFor(locale).orEmpty()
     }
 
+    fun hasInstalledModel(locale: Locale): Boolean {
+        return modelManager.resolveModelDir(locale)?.exists() == true
+    }
+
     fun runMicrophoneLoop(
         context: Context,
         recognizer: Recognizer,
@@ -65,15 +70,18 @@ class VoskModelProvider(
                 speechService = service
                 service.startListening(object : RecognitionListener {
                     override fun onPartialResult(hypothesis: String?) {
-                        if (!hypothesis.isNullOrBlank()) listener.onPartial(hypothesis)
+                        val text = extractText(hypothesis, preferPartial = true)
+                        if (text.isNotBlank()) listener.onPartial(text)
                     }
 
                     override fun onResult(hypothesis: String?) {
-                        if (!hypothesis.isNullOrBlank()) listener.onFinal(hypothesis)
+                        val text = extractText(hypothesis, preferPartial = false)
+                        if (text.isNotBlank()) listener.onFinal(text)
                     }
 
                     override fun onFinalResult(hypothesis: String?) {
-                        if (!hypothesis.isNullOrBlank()) listener.onFinal(hypothesis)
+                        val text = extractText(hypothesis, preferPartial = false)
+                        if (text.isNotBlank()) listener.onFinal(text)
                     }
 
                     override fun onError(exception: Exception?) {
@@ -112,5 +120,20 @@ class VoskModelProvider(
     private fun createModel(dir: File): Model {
         if (!dir.exists()) throw IllegalStateException("Model directory does not exist: ${dir.absolutePath}")
         return Model(dir.absolutePath)
+    }
+
+    private fun extractText(rawHypothesis: String?, preferPartial: Boolean): String {
+        if (rawHypothesis.isNullOrBlank()) return ""
+        val raw = rawHypothesis.trim()
+        if (!raw.startsWith("{")) return raw
+
+        return runCatching {
+            val json = JSONObject(raw)
+            if (preferPartial) {
+                json.optString("partial", "")
+            } else {
+                json.optString("text", "").ifBlank { json.optString("partial", "") }
+            }
+        }.getOrDefault(raw).trim()
     }
 }

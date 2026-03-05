@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">عينة التحكم الصوتي</string>
+    <string name="title_voice_control_sample">نموذج التحكم الصوتي</string>
+    <string name="btn_tap_to_speak_long_press_to_stop">اضغط للتحدث، ضغطة مطولة للإيقاف</string>
+    <string name="status_idle">جاهز</string>
+    <string name="status_listening">يستمع الآن</string>
+    <string name="hint_language">اللغة</string>
+    <string name="hint_recognition_mode">وضع التعرف</string>
+    <string name="chk_manual_online_enabled">تفعيل التعرف عبر الإنترنت يدويًا</string>
+    <string name="chk_auto_switch_online">التحويل التلقائي إلى الإنترنت عند توفر الشبكة</string>
+    <string name="hint_install_arabic_model">ملاحظة: ثبّت نموذج Vosk العربي لوضع بدون إنترنت. في الوضع التلقائي يمكن التحويل إلى الإنترنت.</string>
+    <string name="status_mic_permission_granted">تم منح إذن الميكروفون</string>
+    <string name="status_mic_permission_denied">تم رفض إذن الميكروفون</string>
+    <string name="status_command_template">الأمر: %1$s</string>
+    <string name="status_command_confidence_template">الأمر: %1$s (%2$d%%)</string>
+    <string name="status_low_confidence_template">ثقة منخفضة (%1$d%%): %2$s</string>
+    <string name="status_no_command_match">لم يتم التعرف على أمر مطابق</string>
+    <string name="status_error_template">خطأ: %1$s</string>
+    <string name="option_locale_ar">العربية (ar)</string>
+    <string name="option_locale_ru">الروسية (ru-RU)</string>
+    <string name="option_locale_en">الإنجليزية (en-US)</string>
+    <string name="option_mode_auto">تلقائي (AUTO)</string>
+    <string name="option_mode_offline">بدون إنترنت (OFFLINE_ONLY)</string>
+    <string name="option_mode_online">بالإنترنت (ONLINE_ONLY)</string>
+    <string name="status_installing_ar_model">يتم تثبيت النموذج العربي...</string>
+    <string name="status_fetching_model_index">جارِ جلب فهرس النماذج...</string>
+    <string name="status_downloading_ar_model_percent">تحميل النموذج العربي: %1$d%%</string>
+    <string name="status_downloading_ar_model_mb">تحميل النموذج العربي: %1$dMB</string>
+    <string name="status_ar_model_installed">تم تثبيت النموذج العربي بنجاح</string>
+    <string name="status_ar_model_install_failed">فشل تنزيل النموذج العربي: %1$s</string>
+    <string name="status_model_index_not_configured">لم يتم إعداد رابط فهرس النماذج</string>
+    <string name="status_ar_pack_not_found_in_index">لم يتم العثور على حزمة Vosk العربية في فهرس النماذج</string>
+    <string name="status_check_internet">تحقق من اتصال الإنترنت</string>
+</resources>
